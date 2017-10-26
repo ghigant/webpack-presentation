@@ -5,7 +5,7 @@ export default {
   progress: false,
   controls: false,
   center: false,
-  slideNumber: true,
+  slideNumber: false,
   transition: 'none',
   transitionSpeed: 'fast',
 }
