@@ -5,9 +5,9 @@ import family from './images/family.jpg'
 export default function () {
   return (
     <Slide title={'whoami'}>
-      {/* <div style={{display: 'flex', flexDirection: 'rew', alignItems: 'center', height: '100%' }}> */}
-        <img src={family} />
-      {/* </div> */}
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <img style={{ margin: 0, border: 'none', height: 420}}src={family} />
+      </div>
     </Slide>
   );
 }

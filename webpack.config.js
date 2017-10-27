@@ -38,7 +38,7 @@ module.exports = {
           options: {
             outputPath: 'images/',
             name: '[name].[hash].[ext]'
-          }  
+          }
         }
       ]
     }],
@@ -46,9 +46,7 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      // minChunks: Infinity,
-      // chunks: ['reveal.js'],
+      name: 'vendor'
     }),
 
     new HtmlWebpackPlugin({
@@ -60,6 +58,7 @@ module.exports = {
 
   devServer: {
     hot: true,
+    host: '0.0.0.0',
     contentBase: './build',
   },
 };

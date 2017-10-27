@@ -19,13 +19,13 @@ class App extends Component {
   render() {
     return (
       <div className="slides">
-        { 
+        {
           context.keys().map((slide, index) => {
-            if(index === 0) {
-              return <section data-background-color="#fff" key={slide}>{context(slide)()}</section> 
-            }
+            // if(index === 0) {
+            //   return <section data-background-color="#fff" key={slide}>{context(slide)()}</section>
+            // }
             return (
-              <section data-background-color="#2B3A42" key={slide}>{context(slide)()}</section>
+              <section style={{height: '100%'}} data-background-color="#2B3A42" key={slide}>{context(slide)()}</section>
             )
           })
         }
