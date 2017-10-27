@@ -48,7 +48,6 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
-
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './template.html',

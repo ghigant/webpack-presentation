@@ -1,14 +1,9 @@
 import React from 'react';
-import Slide from '../components/Slide.jsx';
+import Section from '../components/Section.jsx';
 
-export default function () {
-  // <br/> 
-  //         <p>@Valentin Boțoc</p>
-  const items = [
-
-  ];
+export default function Slide() {
   return (
-    <Slide title={'whoami'}>
+    <Section title={'whoami'}>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
         <div style={{flex: '1 0', marginTop: '0', textAlign: 'left'}}>
           <ul>
@@ -18,10 +13,10 @@ export default function () {
           <br/><br/>
           <ul >
             <li>Love JavaScript</li>
-            <li>Passionated about front end technologies</li>
+            <li>Passionated about front-end technologies</li>
           </ul>
         </div>
       </div>
-    </Slide>
+    </Section>
   );
 }

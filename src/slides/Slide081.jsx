@@ -1,10 +1,10 @@
 import React from 'react';
-import Slide from '../components/Slide.jsx';
+import Section from '../components/Section.jsx';
 import Code from '../components/Code.jsx';
 
-export default function () {
+export default function Slide() {
   return (
-    <Slide title={'Configuration'}>
+    <Section title={'configuration'}>
       <Code type="javascript">
         {`module.exports = ${JSON.stringify({
             entry: './app.js',
@@ -15,6 +15,6 @@ export default function () {
         , null, 2)
         };`}
       </Code>
-    </Slide>
+    </Section>
   );
 }

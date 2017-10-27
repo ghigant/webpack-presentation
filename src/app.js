@@ -24,9 +24,17 @@ class App extends Component {
             // if(index === 0) {
             //   return <section data-background-color="#fff" key={slide}>{context(slide)()}</section>
             // }
-            return (
-              <section style={{height: '100%'}} data-background-color="#2B3A42" key={slide}>{context(slide)()}</section>
-            )
+            const Slide = context(slide);
+            return <Slide key={slide}/>
+            // return (
+            //   <section 
+            //     style={{height: '100%'}} 
+            //     data-background-color="#2B3A42" 
+            //     key={slide}>{context(slide)({
+            //       key: slide
+            //     })}
+            //   </section>
+            // )
           })
         }
       </div>
