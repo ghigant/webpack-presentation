@@ -15,8 +15,7 @@ module.exports = {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[chunkhash].js',
 
-    libraryTarget: 'umd',
-    library: 'Demo' // global
+   /* ... */
   }
   /* ... */
 };

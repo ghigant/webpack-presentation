@@ -24,6 +24,13 @@ module.exports = {
       <Code type="javascript">
         {config.trim()}
       </Code>
+      <Code type="bash">
+        {(`
+# run
+>> webpack [--config webpack.config.js]
+>> ./node_modules/.bin/webpack app.js app.bundle.js 
+        `).trim()}
+      </Code>
     </Section>
   );
 }

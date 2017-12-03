@@ -7,7 +7,8 @@ import 'reveal.js/css/theme/black.css';
 import Reveal from 'reveal.js';
 import config from './config';
 
-const context = require.context('./slides', false, /\.(jsx|js)$/);
+const context = require.context('./slides', true, /\.(jsx)$/);
+
 class App extends Component {
   componentDidMount() {
     Reveal.initialize(config);
@@ -21,20 +22,9 @@ class App extends Component {
       <div className="slides">
         {
           context.keys().map((slide, index) => {
-            // if(index === 0) {
-            //   return <section data-background-color="#fff" key={slide}>{context(slide)()}</section>
-            // }
             const Slide = context(slide);
-            return <Slide key={slide}/>
-            // return (
-            //   <section 
-            //     style={{height: '100%'}} 
-            //     data-background-color="#2B3A42" 
-            //     key={slide}>{context(slide)({
-            //       key: slide
-            //     })}
-            //   </section>
-            // )
+            return <Slide key={slide} />
+            
           })
         }
       </div>

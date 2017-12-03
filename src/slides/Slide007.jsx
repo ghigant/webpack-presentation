@@ -6,7 +6,7 @@ export default function Slide() {
     <Section title={'configuration'}>
       <div style={{display: 'flex', flexDirection: 'row', alignItems: 'top', height: '100%' }}>
         <div style={{flex: '1 0', textAlign: 'left'}}>
-          <h4 style={{textTransform: 'initial'}}>Core concepts</h4>
+          <h4 style={{textTransform: 'initial'}}>Core Concepts</h4>
           <ul>
             <li><b style={{color: '#39c0ba'}}>Entries</b> - Where to start bundling?</li>
             <li><b style={{color: '#39c0ba'}}>Output</b> - Where to output?</li>
